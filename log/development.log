@@ -1,0 +1,64 @@
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-10 18:35:36) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 96ms (View: 92, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#line_chart (for 127.0.0.1 at 2010-06-10 18:35:50) [GET]
+  [4;36;1mWidget Load (4.0ms)[0m   [0;1mSELECT * FROM "widgets" [0m
+Rendering template within layouts/application
+Rendering home/line_chart
+  [4;35;1mWidgetStat Load (0.0ms)[0m   [0mSELECT * FROM "widget_stats" WHERE ("widget_stats".widget_id = 1) [0m
+  [4;36;1mWidgetStat Load (0.0ms)[0m   [0;1mSELECT * FROM "widget_stats" WHERE ("widget_stats".widget_id = 2) [0m
+  [4;35;1mWidgetStat Load (0.0ms)[0m   [0mSELECT * FROM "widget_stats" WHERE ("widget_stats".widget_id = 3) [0m
+Completed in 104ms (View: 16, DB: 4) | 200 OK [http://0.0.0.0/line_chart]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-10 19:15:56) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 36ms (View: 36, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing HomeController#crime_chart (for 127.0.0.1 at 2010-06-10 19:16:00) [GET]
+
+NoMethodError (undefined method `each' for 5:Fixnum):
+  app/controllers/home_controller.rb:37:in `crime_chart'
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (4.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#crime_chart (for 127.0.0.1 at 2010-06-10 19:16:36) [GET]
+Rendering template within layouts/application
+Rendering home/crime_chart
+Completed in 20ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/crime_chart]
+
+
+Processing HomeController#crime_chart (for 127.0.0.1 at 2010-06-10 19:23:22) [GET]
+Rendering template within layouts/application
+Rendering home/crime_chart
+Completed in 24ms (View: 20, DB: 0) | 200 OK [http://0.0.0.0/crime_chart]
+
+
+Processing ApplicationController#crime_chart (for 127.0.0.1 at 2010-06-10 19:31:47) [GET]
+
+MissingSourceFile (no such file to load -- fastercsv):
+  app/controllers/home_controller.rb:2
+
+Rendered rescues/_trace (84.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#crime_chart (for 127.0.0.1 at 2010-06-10 19:32:27) [GET]
+
+MissingSourceFile (no such file to load -- fastercsv):
+  app/controllers/home_controller.rb:2
+
+Rendered rescues/_trace (56.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)

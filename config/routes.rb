@@ -12,7 +12,9 @@ ActionController::Routing::Routes.draw do |map|
   map.gauge '/gauge', :controller => 'home', :action => 'gauge'
   map.line_chart '/line_chart', :controller => 'home', :action => 'line_chart'
   map.pie_chart '/pie_chart', :controller => 'home', :action => 'pie_chart'
-  
+
+  map.crime_chart '/crime_chart', :controller => 'home', :action => 'crime_chart'
+
   map.root :controller => "home"
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
